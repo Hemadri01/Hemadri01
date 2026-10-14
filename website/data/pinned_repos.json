@@ -1,0 +1,32 @@
+{
+  "username": "Hemadri01",
+  "source": "user-confirmed",
+  "verified_at": "2026-10-07",
+  "repositories": [
+    {
+      "name": "Hemadri01/rtt-aware-routing",
+      "summary": "",
+      "url": "https://github.com/Hemadri01/rtt-aware-routing"
+    },
+    {
+      "name": "Hemadri01/RCR_Password_Manager",
+      "summary": "",
+      "url": "https://github.com/Hemadri01/RCR_Password_Manager"
+    },
+    {
+      "name": "Hemadri01/Morse_Web_Controller_ESP32",
+      "summary": "",
+      "url": "https://github.com/Hemadri01/Morse_Web_Controller_ESP32"
+    },
+    {
+      "name": "Hemadri01/Data_Mining_and_Machine_Learning_2025",
+      "summary": "",
+      "url": "https://github.com/Hemadri01/Data_Mining_and_Machine_Learning_2025"
+    },
+    {
+      "name": "Hemadri01/trafpy",
+      "summary": "",
+      "url": "https://github.com/Hemadri01/trafpy"
+    }
+  ]
+}

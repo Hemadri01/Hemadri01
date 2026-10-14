@@ -1,0 +1,69 @@
+{
+  "title": "Hemadri Shekhar Das",
+  "description": "Hemadri Shekhar Das — computer networks, datacenter load balancing, embedded projects, and a background in mathematics.",
+  "default_theme": "warm",
+  "hero_intro": "I’m Hemadri, a computer science graduate with a background in mathematics. I work on computer networks, build embedded projects, and run a home lab.",
+  "research_title": "How should a network choose its next path?",
+  "research_intro": "My MSc thesis began with CONGA, a congestion-aware load balancer for datacenter networks. I implemented it in ns-3, compared it with ECMP, and explored Power of Two Choices in path selection. That variant did not improve on CONGA.",
+  "research_current": "I am now evaluating smoothed RTT as an approximate congestion signal for flowlet routing. The prototype is implemented; its performance evaluation is still in progress.",
+  "research_limit": "The current prototype relies on TCP feedback. Transport-independent path measurement, including for RoCEv2, remains future work.",
+  "project_labels": {
+    "rtt-aware-routing": {
+      "title": "RTT-aware flowlet routing",
+      "category": "research"
+    },
+    "RCR_Password_Manager": {
+      "title": "RCR password manager",
+      "category": "coursework"
+    },
+    "Morse_Web_Controller_ESP32": {
+      "title": "Morse, over Wi-Fi",
+      "category": "hobby"
+    },
+    "Data_Mining_and_Machine_Learning_2025": {
+      "title": "Data mining & machine learning",
+      "category": "coursework"
+    },
+    "trafpy": {
+      "title": "Traffic generation & analysis",
+      "category": "research"
+    }
+  },
+  "skill_fields": [
+    {
+      "label": "Languages",
+      "source": "languages"
+    },
+    {
+      "label": "Simulation",
+      "source": "networking"
+    },
+    {
+      "label": "Analysis",
+      "source": "analysis"
+    },
+    {
+      "label": "Embedded",
+      "source": "embedded"
+    },
+    {
+      "label": "Tooling",
+      "source": "tooling"
+    }
+  ],
+  "contact_fields": [
+    "Email",
+    "CV",
+    "Thesis",
+    "GitHub",
+    "LinkedIn",
+    "Scholar"
+  ],
+  "theme_labels": {
+    "warm": "Warm",
+    "nord": "Nord",
+    "tokyo": "Tokyo",
+    "rose-pine": "Rosé Pine",
+    "paper": "Paper"
+  }
+}

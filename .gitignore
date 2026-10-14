@@ -11,7 +11,6 @@ __pycache__/
 /tmp/
 /references/
 /mockups/
-/website/
 
 # Local tool state
 /.agents/

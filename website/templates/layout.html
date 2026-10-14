@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="{{DEFAULT_THEME}}" data-page="{{SESSION_PATH}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="theme-color" content="#0d0c0a">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <title>{{PAGE_TITLE}} · {{TITLE}}</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="boot.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <canvas id="ambient-field" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Hemadri, home"><span class="prompt-mark">&gt;_</span> hemadri<span class="brand-path"> / ~</span></a>
+      <nav aria-label="Main navigation">{{NAVIGATION}}</nav>
+      <label class="theme-control" hidden><span class="theme-dot" aria-hidden="true"></span><span class="sr-only">Color theme</span>
+        <select id="theme">{{THEME_OPTIONS}}</select>
+      </label>
+    </div>
+  </header>
+  <main id="main">
+{{CONTENT}}
+  </main>
+  <footer class="footer wrap"><span><span class="prompt-mark">hemadri@home</span><span class="dim">:~$</span> <span aria-hidden="true">_</span></span><a href="#main">back to top ↑</a></footer>
+  <div class="statusbar"><div class="statusbar-inner"><span class="session-label">[0] hemadri</span><span class="status-location">{{LOCATION}}</span><span class="session-path" id="session-path">{{SESSION_PATH}}</span><div class="terminal-controls" hidden><button id="cycle-theme" type="button" title="Next theme (T)"><kbd>T</kbd> theme</button><button id="motion-toggle" type="button" aria-pressed="true">motion: on</button></div><span class="status-theme">theme: <span id="theme-name">{{DEFAULT_THEME}}</span></span></div></div>
+<p class="sr-only" id="theme-status" role="status" aria-live="polite"></p>
+</body>
+</html>

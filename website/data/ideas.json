@@ -1,0 +1,22 @@
+{
+  "topics": [
+    {
+      "slug": "networks",
+      "title": "Networks",
+      "description": "Routing, congestion signals, and questions from simulation work.",
+      "notes": []
+    },
+    {
+      "slug": "systems",
+      "title": "Systems & home lab",
+      "description": "Self-hosting, Linux, and small systems experiments.",
+      "notes": []
+    },
+    {
+      "slug": "side-projects",
+      "title": "Side projects",
+      "description": "Hardware experiments and occasional things to build.",
+      "notes": []
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+    <section id="home" class="hero wrap" aria-labelledby="hero-title">
+      <div class="boot-log" id="boot-log" aria-hidden="true"></div>
+      <div class="boot-prompt"><p class="shell-line"><span>hemadri@home</span><span class="dim">:~$</span> <span id="boot-command">fastfetch</span><span class="command-cursor" aria-hidden="true">▌</span></p><button id="skip-intro" type="button">skip intro ↵</button></div>
+      <div class="portrait-column">
+        <p class="file-label"><span class="tiny-square" aria-hidden="true"></span> hello.png <span class="file-type">PNG</span></p>
+        <img class="portrait" src="assets/portrait.png" alt="Saitama with a speech bubble saying HI" width="1269" height="1239" fetchpriority="high">
+        <div class="portrait-caption"><span>same curiosity.</span><span class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+      <div class="hero-copy">
+        <h1 id="hero-title">Hemadri<br><span>Shekhar Das</span></h1>
+        <p class="education-line">{{DEGREE}} <span class="dim">/</span> {{INSTITUTION_SHORT}} <span class="dim">/</span> {{YEAR}}</p>
+        <p class="hero-description">{{HERO_INTRO}}</p>
+        <div class="hero-actions"><a class="primary-link" href="research.html">Research &amp; projects <span aria-hidden="true">↓</span></a><a class="text-link" href="{{GITHUB}}">GitHub <span aria-hidden="true">↗</span></a>{{HERO_CV}}</div>
+        <div class="hero-footnote"><span class="status-dot" aria-hidden="true"></span> {{CURRENT_WORK}}</div>
+      </div>
+    </section>
+    <div class="home-panes">
+    <section id="about" class="section wrap" aria-labelledby="about-title">
+      <div class="section-label"><span>01 / curriculum vitae</span><span class="section-path">$ cat about.md</span></div>
+      <div class="about-grid">
+        <div>
+          <h2 id="about-title">Background &amp; education.</h2>
+          <p>{{ABOUT_ACADEMIC}}</p>
+          <p>{{ABOUT_PERSONAL}}</p>
+          <dl class="education-list"><div><dt>{{YEAR}}</dt><dd><strong>{{DEGREE}}</strong><span>{{INSTITUTION}}</span></dd></div><div><dt>BSc</dt><dd><strong>{{UNDERGRAD_DEGREE}}</strong><span>{{UNDERGRAD_INSTITUTION}} · {{UNDERGRAD_UNIVERSITY}}</span></dd></div></dl>
+        </div>
+        <aside class="tools-aside" aria-label="Tools and languages">
+          <h3><span class="dim">$</span> cat toolkit.conf</h3>
+          <dl class="tool-list">{{SKILLS}}</dl>
+        <h3 class="coursework-heading">Selected coursework</h3><p class="coursework-list">{{COURSEWORK}}</p></aside>
+      </div>
+    </section>
+<section class="section wrap directory" aria-labelledby="directory-title"><div class="section-label"><span>02 / directory</span><span class="section-path">$ ls ~/</span></div><h2 id="directory-title">Elsewhere on this site.</h2><div class="directory-grid"><a href="research.html"><span class="prompt-mark">01 / research/ ↗</span><h3>Research &amp; projects</h3><p>Thesis work, ongoing experiments, coursework, and hobby builds.</p></a><a href="ideas.html"><span class="prompt-mark">02 / ideas/ ↗</span><h3>Ideas &amp; notes</h3><p>A notebook for occasional questions and thoughts, organised by topic.</p></a></div></section>
+    <section id="contact" class="section contact wrap" aria-labelledby="contact-title">
+      <div class="section-label"><span>03 / contact</span><span class="section-path">$ cat links.conf</span></div>
+      <div class="contact-inner"><div><h2 id="contact-title">Contact &amp; links.</h2><p>Code, experiments, and work in progress.</p></div><div class="contact-links">{{CONTACT_LINKS}}</div></div>
+    </section>
+    </div>

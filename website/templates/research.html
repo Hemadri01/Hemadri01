@@ -1,0 +1,34 @@
+<div class="window-bar wrap" aria-hidden="true"><span class="window-lights"><i></i><i></i><i></i></span><span>hemadri@home: {{SESSION_PATH}}</span><span>UTF-8</span></div>
+<header class="page-intro wrap"><p class="shell-line"><span>hemadri@home</span><span class="dim">:~$</span> cd research/</p><h1>Research <span>&amp; projects.</span></h1><p>My work in computer networks, alongside coursework and personal builds.</p><div class="page-jumps"><a href="#research">Thesis &amp; current work ↓</a><a href="#projects">Browse projects ↓</a></div></header>    <section id="research" class="section wrap research-context" aria-labelledby="research-title">
+      <div class="section-label"><span>01 / thesis &amp; ongoing work</span><span class="section-path">$ cat research.md</span></div>
+      <div class="research-grid">
+        <div>
+          <h2 id="research-title">Datacenter load balancing.</h2>
+          <p>{{RESEARCH_INTRO}}</p>
+          <p>{{RESEARCH_CURRENT}}</p>
+          <a class="text-link" href="{{RESEARCH_URL}}">Read the implementation <span aria-hidden="true">↗</span></a>
+        </div>
+        <aside class="research-aside" aria-label="Research focus and status">
+          <h3>Areas of interest</h3>
+          <ul class="focus-list">{{INTERESTS}}</ul>
+          <div class="research-status"><span class="status-label">Evaluation in progress</span><p>{{RESEARCH_LIMIT}}</p></div>
+        </aside>
+      </div>
+    </section>
+    <section id="projects" class="section wrap" aria-labelledby="projects-title">
+      <div class="section-label"><span>02 / projects</span><span class="section-path">$ ls projects/</span></div>
+      <div class="section-heading">
+        <div><h2 id="projects-title">Project directory.</h2><p class="section-intro">Research experiments, coursework, and the occasional hardware project.</p></div>
+        <span class="project-count" id="project-count">{{PROJECT_COUNT}} projects</span>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">all</button>
+        <button type="button" data-filter="research" aria-pressed="false">research</button>
+        <button type="button" data-filter="coursework" aria-pressed="false">coursework</button>
+        <button type="button" data-filter="hobby" aria-pressed="false">hobby</button>
+      </div>
+      <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+      <div class="project-list">{{PROJECTS}}</div>
+      <p id="no-projects" hidden>No projects in this category.</p>
+      <a class="all-repositories text-link" href="{{GITHUB}}?tab=repositories">All repositories on GitHub <span aria-hidden="true">↗</span></a>
+    </section>
