@@ -1,0 +1,202 @@
+{
+  "name": "Hemadri Shekhar Das",
+  "username": "Hemadri01",
+  "location": "Chennai, India",
+  "education": {
+    "degree": "MSc Computer Science",
+    "institution": "Chennai Mathematical Institute",
+    "institution_short": "CMI",
+    "undergraduate": {
+      "degree": "BSc Mathematics (Honours)",
+      "institution": "Asutosh College",
+      "university": "University of Calcutta"
+    },
+    "start": "2024-08",
+    "completed": "2026-07",
+    "year": "2026"
+  },
+  "background": "Mathematics",
+  "bio": [
+    "I completed my MSc in Computer Science at Chennai Mathematical Institute in July 2026, after a BSc in Mathematics (Honours) at Asutosh College, University of Calcutta. I study datacenter load balancing and approximate congestion signals.",
+    "For my thesis, I implemented CONGA in ns-3 and compared it with ECMP, then explored Power of Two Choices in its path selection. That variant did not improve on CONGA. I am now evaluating smoothed RTT as an alternative congestion signal for flowlet routing; the implementation is working, but performance evaluation remains preliminary.",
+    "Outside research, I build embedded projects and run a home lab with self-hosting, Docker, Proxmox, and NAS. My ESP32 Morse transmitter was built to support maritime signal training."
+  ],
+  "research": {
+    "area": "Computer Networks",
+    "thesis": "Load Balancing in Data Center Networks",
+    "interests": [
+      "Datacenter load balancing and routing under asymmetric link capacities",
+      "Approximate congestion signals and network telemetry",
+      "Transport-independent path measurement for RoCEv2",
+      "Reproducible simulation and flow completion time analysis"
+    ],
+    "current": "Evaluating RTT-aware flowlet routing in ns-3.48"
+  },
+  "skills": {
+    "languages": [
+      "C++",
+      "C",
+      "Python",
+      "Bash"
+    ],
+    "networking": [
+      "ns-3.48",
+      "IPv4/TCP",
+      "flowlet routing",
+      "CONGA",
+      "ECMP"
+    ],
+    "analysis": [
+      "NumPy",
+      "pandas",
+      "Matplotlib",
+      "Jupyter"
+    ],
+    "experiments": [
+      "shared traces",
+      "recorded seeds",
+      "payload accounting",
+      "mean and p99 FCT"
+    ],
+    "embedded": [
+      "ESP32-C3",
+      "FreeRTOS",
+      "Arduino",
+      "AsyncWebServer"
+    ],
+    "crypto": [
+      "OpenSSL",
+      "libsodium",
+      "key derivation",
+      "HMAC"
+    ],
+    "tooling": [
+      "Linux",
+      "Git",
+      "CMake"
+    ],
+    "familiarity": [
+      "Java",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "LaTeX"
+    ],
+    "homelab": [
+      "self-hosting",
+      "Docker",
+      "Proxmox",
+      "NAS"
+    ]
+  },
+  "projects": [
+    {
+      "name": "rtt-aware-routing",
+      "kind": "Research / MSc thesis extension",
+      "stack": [
+        "C++",
+        "ns-3.48",
+        "Python",
+        "Bash"
+      ],
+      "summary": "An ns-3 flowlet-routing module using smoothed RTT as a congestion signal. Evaluation against CONGA and ECMP is ongoing.",
+      "details": [
+        "Implements several RTT-based path-selection policies using per-uplink EWMA estimates and TCP ACK feedback.",
+        "Compares algorithms on symmetric and asymmetric leaf-spine fabrics using shared traffic traces, payload accounting, and flow completion time analysis. Current RTT results are preliminary.",
+        "The prototype relies on TCP feedback. Transport-independent measurement for traffic such as RoCEv2 remains future work."
+      ],
+      "url": "https://github.com/Hemadri01/rtt-aware-routing"
+    },
+    {
+      "name": "RCR_Password_Manager",
+      "kind": "Cryptography coursework",
+      "stack": [
+        "C",
+        "OpenSSL",
+        "libsodium"
+      ],
+      "summary": "An implementation of the RCR 32/64 stream cipher within a password-manager coursework project.",
+      "details": [
+        "Implements cipher state, key/IV setup, and 32-bit and 64-bit keystream generation.",
+        "Supports PBKDF2-HMAC-SHA256 and Argon2id for password-based key derivation, followed by HKDF-SHA256 for separate key material.",
+        "Processes file encryption and decryption in chunks, with HMAC-SHA256 authentication and tag comparison."
+      ],
+      "url": "https://github.com/Hemadri01/RCR_Password_Manager"
+    },
+    {
+      "name": "Morse_Web_Controller_ESP32",
+      "kind": "Hobby project",
+      "stack": [
+        "ESP32-C3",
+        "FreeRTOS",
+        "Arduino",
+        "AsyncWebServer"
+      ],
+      "summary": "A browser-controlled ESP32-C3 Morse transmitter, built as a hobby project to help my father teach maritime signaling.",
+      "details": [
+        "FreeRTOS tasks handle Morse generation, relay control, and Wi-Fi access-point connectivity.",
+        "Browser controls provide adjustable timing, start/stop/pause/resume, and separate test and main transmission stages.",
+        "Built for teaching the Second Mate Officer course. The public repository contains a subset of the project."
+      ],
+      "url": "https://github.com/Hemadri01/Morse_Web_Controller_ESP32"
+    },
+    {
+      "name": "Data_Mining_and_Machine_Learning_2025",
+      "kind": "Coursework",
+      "stack": [
+        "Jupyter Notebook"
+      ],
+      "summary": "Assignment notebooks from the Data Mining and Machine Learning course.",
+      "details": [],
+      "url": "https://github.com/Hemadri01/Data_Mining_and_Machine_Learning_2025"
+    },
+    {
+      "name": "trafpy",
+      "kind": "Research tooling / fork of cwfparsonson/trafpy",
+      "stack": [
+        "Python",
+        "NumPy",
+        "pandas",
+        "Matplotlib",
+        "Jupyter"
+      ],
+      "summary": "Adapted TrafPy for early routing experiments: workload generation, ns-3 trace exports, and flow completion time analysis.",
+      "details": [
+        "Generated rack-aware and cross-rack workloads for early 100 Mb/s experiments, with CSV exports for ns-3.",
+        "Analysis notebooks match input and output flows and compare CONGA, ECMP, and RTT policies. Later 10 Gb/s experiments use a separate trace generator.",
+        "The original traffic generator and benchmark models are credited to TrafPy; local adaptations include plotting compatibility and removal of mandatory GPU initialization from selected paths."
+      ],
+      "url": "https://github.com/Hemadri01/trafpy"
+    },
+    {
+      "name": "Networking_Fundamentals_2025",
+      "kind": "Coursework",
+      "stack": [
+        "Python"
+      ],
+      "summary": "Course assignments and a presentation on networking fundamentals.",
+      "details": [],
+      "url": "https://github.com/Hemadri01/Networking_Fundamentals_2025"
+    }
+  ],
+  "links": {
+    "GitHub": "https://github.com/Hemadri01",
+    "Website": "",
+    "CV": "",
+    "Email": "",
+    "LinkedIn": "",
+    "Scholar": "",
+    "Thesis": ""
+  },
+  "intro": [
+    "I study how datacenter networks spread traffic across paths. My MSc thesis implemented CONGA in ns-3 and explored Power of Two Choices; that variant did not improve on CONGA.",
+    "I’m now evaluating smoothed RTT as a congestion signal for flowlet routing. Results are preliminary. Outside research, I build embedded projects and run a home lab."
+  ],
+  "coursework": [
+    "Networking",
+    "Algorithms",
+    "Concurrent programming",
+    "Cryptography",
+    "Machine learning"
+  ]
+}

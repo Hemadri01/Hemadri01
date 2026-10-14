@@ -1,0 +1,147 @@
+{
+  "warm": {
+    "description": "Original warm amber, coral, and sage",
+    "colors": {
+      "background": "#0d0c0a",
+      "titlebar": "#1d1a16",
+      "border": "#5c5142",
+      "text": "#e0d8ca",
+      "muted": "#a89c8d",
+      "prompt": "#a8c987",
+      "key": "#e78368",
+      "heading": "#f1ba69",
+      "index": "#a8c987",
+      "rule": "#6a5a45",
+      "soft_rule": "#342e27"
+    },
+    "palette": [
+      "#a94742",
+      "#dc7652",
+      "#e0a657",
+      "#adbb80",
+      "#719c88",
+      "#e0d0b8"
+    ],
+    "window_dots": [
+      "#e8746d",
+      "#e6b65b",
+      "#83b973"
+    ]
+  },
+  "nord": {
+    "description": "Muted ice blue and sage",
+    "colors": {
+      "background": "#202630",
+      "titlebar": "#2e3440",
+      "border": "#4c566a",
+      "text": "#eceff4",
+      "muted": "#aab6c9",
+      "prompt": "#a3be8c",
+      "key": "#88c0d0",
+      "heading": "#81a1c1",
+      "index": "#a3be8c",
+      "rule": "#616e88",
+      "soft_rule": "#3b4252"
+    },
+    "palette": [
+      "#bf616a",
+      "#d08770",
+      "#ebcb8b",
+      "#a3be8c",
+      "#88c0d0",
+      "#b48ead"
+    ],
+    "window_dots": [
+      "#bf616a",
+      "#ebcb8b",
+      "#a3be8c"
+    ]
+  },
+  "tokyo": {
+    "description": "Deep navy with blue, violet, and green",
+    "colors": {
+      "background": "#1a1b26",
+      "titlebar": "#24283b",
+      "border": "#414868",
+      "text": "#c0caf5",
+      "muted": "#a9b1d6",
+      "prompt": "#9ece6a",
+      "key": "#7dcfff",
+      "heading": "#bb9af7",
+      "index": "#9ece6a",
+      "rule": "#565f89",
+      "soft_rule": "#343b58"
+    },
+    "palette": [
+      "#f7768e",
+      "#ff9e64",
+      "#e0af68",
+      "#9ece6a",
+      "#7aa2f7",
+      "#bb9af7"
+    ],
+    "window_dots": [
+      "#f7768e",
+      "#e0af68",
+      "#9ece6a"
+    ]
+  },
+  "rose-pine": {
+    "description": "Soft charcoal, rose, and lavender",
+    "colors": {
+      "background": "#191724",
+      "titlebar": "#26233a",
+      "border": "#524f67",
+      "text": "#e0def4",
+      "muted": "#a49eb8",
+      "prompt": "#9ccfd8",
+      "key": "#ebbcba",
+      "heading": "#c4a7e7",
+      "index": "#f6c177",
+      "rule": "#6e6a86",
+      "soft_rule": "#393552"
+    },
+    "palette": [
+      "#eb6f92",
+      "#f6c177",
+      "#ebbcba",
+      "#9ccfd8",
+      "#31748f",
+      "#c4a7e7"
+    ],
+    "window_dots": [
+      "#eb6f92",
+      "#ebbcba",
+      "#9ccfd8"
+    ]
+  },
+  "paper": {
+    "description": "Light ivory with ink, rust, and forest green",
+    "colors": {
+      "background": "#f5f0e6",
+      "titlebar": "#e8e0d2",
+      "border": "#b2a590",
+      "text": "#302d29",
+      "muted": "#696055",
+      "prompt": "#35624b",
+      "key": "#994c35",
+      "heading": "#79551e",
+      "index": "#35624b",
+      "rule": "#b2a590",
+      "soft_rule": "#d8cebf"
+    },
+    "palette": [
+      "#a84639",
+      "#ac652e",
+      "#967421",
+      "#547353",
+      "#477a86",
+      "#846486"
+    ],
+    "window_dots": [
+      "#a84639",
+      "#967421",
+      "#547353"
+    ]
+  }
+}

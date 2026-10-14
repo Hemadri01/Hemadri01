@@ -1,0 +1,20 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+/.env
+/.env.*
+
+# Generated local previews and scratch work
+/README.generated.txt
+/output/
+/tmp/
+/references/
+/mockups/
+/website/
+
+# Local tool state
+/.agents/
+/.aws/
+/.codex/
+.DS_Store

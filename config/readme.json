@@ -1,0 +1,226 @@
+{
+  "image": {
+    "source": "assets/Deadpan Hi in Black and White.png",
+    "alt": "Black-and-white Saitama illustration with a speech bubble saying HI",
+    "width": 292,
+    "gap": 3
+  },
+  "svg": {
+    "title": "{name} — GitHub profile",
+    "description": "Terminal-style profile with the original Saitama image, background, skills, and pinned repositories. Working repository links and a text version follow the image.",
+    "text_toggle": "Full text version and project details",
+    "width": 1040,
+    "font_size": 16,
+    "line_height": 25,
+    "padding": 35,
+    "heading_size": 25,
+    "font_family": "DejaVu Sans Mono, Liberation Mono, Menlo, Consolas, monospace",
+    "window_title": "{username}@github: ~",
+    "footer_note": "",
+    "layout": {
+      "titlebar_height": 39,
+      "hero_inset": 7,
+      "hero_gap": 37,
+      "field_gap": 3,
+      "section_gap": 27,
+      "column_gap": 43,
+      "overview_width": 480,
+      "project_indent": 40,
+      "project_gap": 36
+    },
+    "overview": {
+      "left_title": "> about.txt",
+      "right_title": "> skills.conf",
+      "source": "intro",
+      "fields": [
+        {
+          "label": "networking",
+          "source": "skills.networking"
+        },
+        {
+          "label": "languages",
+          "source": "skills.languages"
+        },
+        {
+          "label": "analysis",
+          "source": "skills.analysis"
+        },
+        {
+          "label": "embedded",
+          "source": "skills.embedded"
+        },
+        {
+          "label": "tooling",
+          "source": "skills.tooling"
+        }
+      ]
+    },
+    "projects": {
+      "command": "ls -l ~/pinned/",
+      "source": "pinned_repos",
+      "item": {
+        "title": "name",
+        "summary": {
+          "label": "summary",
+          "source": "summary"
+        },
+        "metadata": [
+          {
+            "label": "kind",
+            "source": "kind",
+            "optional": true
+          },
+          {
+            "label": "stack",
+            "source": "stack",
+            "optional": true
+          }
+        ]
+      },
+      "count_label": "pinned",
+      "metadata_separator": "  /  "
+    }
+  },
+  "terminal": {
+    "prompt": "hemadri@github:~$ fastfetch",
+    "prefix": "hemadri@github:~$",
+    "footer": "hemadri@github:~$ _",
+    "title": "{name}",
+    "title_link": "links.GitHub",
+    "label_gap": 2,
+    "width": 49,
+    "palette": "🟥 🟧 🟨 🟩 🟦 🟪",
+    "fields": [
+      {
+        "label": "education",
+        "template": "{education.degree} @ {education.institution_short} ({education.year})"
+      },
+      {
+        "label": "background",
+        "template": "{education.undergraduate.degree} @ {education.undergraduate.institution}"
+      },
+      {
+        "label": "research",
+        "source": "research.area"
+      },
+      {
+        "label": "thesis",
+        "source": "research.thesis"
+      },
+      {
+        "label": "location",
+        "source": "location"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "command": "cat about.txt",
+      "source": "bio",
+      "display": "paragraphs",
+      "width": 88
+    },
+    {
+      "command": "cat skills.conf",
+      "source": "skills",
+      "display": "mapping",
+      "width": 88
+    },
+    {
+      "command": "cat coursework.txt",
+      "source": "coursework",
+      "display": "inline",
+      "width": 88
+    },
+    {
+      "command": "cat research/interests.txt",
+      "source": "research.interests",
+      "display": "bullets",
+      "width": 88
+    },
+    {
+      "command": "cat pinned/projects.txt",
+      "source": "pinned_repos",
+      "display": "entries",
+      "width": 88,
+      "item": {
+        "title": "name",
+        "url": "url",
+        "fields": [
+          {
+            "label": "type",
+            "source": "kind",
+            "optional": true
+          },
+          {
+            "label": "stack",
+            "source": "stack",
+            "display": "inline",
+            "optional": true
+          },
+          {
+            "label": "about",
+            "source": "summary",
+            "optional": true
+          },
+          {
+            "label": "work",
+            "source": "details",
+            "display": "multiline",
+            "optional": true,
+            "bullet": "- "
+          }
+        ]
+      }
+    },
+    {
+      "command": "cat links.conf",
+      "source": "links",
+      "display": "links"
+    }
+  ],
+  "theme": "warm",
+  "navigation": {
+    "repository_label": "Repository links",
+    "contact": {
+      "label": "Contact / elsewhere",
+      "fields": [
+        {
+          "label": "Website",
+          "source": "links.Website",
+          "optional": true
+        },
+        {
+          "label": "CV",
+          "source": "links.CV",
+          "optional": true
+        },
+        {
+          "label": "Thesis",
+          "source": "links.Thesis",
+          "optional": true
+        },
+        {
+          "label": "Email",
+          "source": "links.Email",
+          "optional": true
+        },
+        {
+          "label": "LinkedIn",
+          "source": "links.LinkedIn",
+          "optional": true
+        },
+        {
+          "label": "Scholar",
+          "source": "links.Scholar",
+          "optional": true
+        },
+        {
+          "label": "GitHub",
+          "source": "links.GitHub",
+          "optional": true
+        }
+      ]
+    }
+  }
+}
