@@ -1,11 +1,11 @@
 {
   "username": "Hemadri01",
-  "source": "user-confirmed",
-  "verified_at": "2026-10-07",
+  "source": "github-graphql",
+  "verified_at": "2026-10-15T08:24:56+00:00",
   "repositories": [
     {
       "name": "Hemadri01/rtt-aware-routing",
-      "summary": "",
+      "summary": "RTT-aware flowlet routing for data center networks, implemented in ns-3 and evaluated against CONGA and ECMP.",
       "url": "https://github.com/Hemadri01/rtt-aware-routing"
     },
     {
@@ -15,17 +15,17 @@
     },
     {
       "name": "Hemadri01/Morse_Web_Controller_ESP32",
-      "summary": "",
+      "summary": "ESP32-powered Morse code generator with a web interface, designed for real-time control and customization of Morse transmission.",
       "url": "https://github.com/Hemadri01/Morse_Web_Controller_ESP32"
     },
     {
       "name": "Hemadri01/Data_Mining_and_Machine_Learning_2025",
-      "summary": "",
+      "summary": "Course Assignments",
       "url": "https://github.com/Hemadri01/Data_Mining_and_Machine_Learning_2025"
     },
     {
       "name": "Hemadri01/trafpy",
-      "summary": "",
+      "summary": "Fork of Trafpy with updated requirements",
       "url": "https://github.com/Hemadri01/trafpy"
     }
   ]
