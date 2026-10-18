@@ -6,7 +6,7 @@
     "gap": 3
   },
   "svg": {
-    "title": "{name} — GitHub profile",
+    "title": "{name} : GitHub profile",
     "description": "Terminal-style profile with the original Saitama image, background, skills, and pinned repositories. Working repository links and a text version follow the image.",
     "text_toggle": "Full text version and project details",
     "width": 1040,

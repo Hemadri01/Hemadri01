@@ -1,6 +1,6 @@
 <!-- Hand-edited. Regenerating with `python3 -m src.build` overwrites this file, so port these changes into data/profile.json / config/readme.json first. -->
 
-<img src="assets/profile.svg" alt="Hemadri Shekhar Das — GitHub profile" width="1040">
+<img src="assets/profile.svg" alt="Hemadri Shekhar Das : GitHub profile" width="1040">
 
 <p><samp><b>Contact / elsewhere</b><br>
 <a href="https://github.com/Hemadri01">[ GitHub ]</a></samp></p>
