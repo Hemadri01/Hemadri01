@@ -31,7 +31,7 @@
     "overview": {
       "left_title": "> about.txt",
       "right_title": "> skills.conf",
-      "source": "intro",
+      "source": "bio",
       "fields": [
         {
           "label": "networking",

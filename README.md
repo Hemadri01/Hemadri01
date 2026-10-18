@@ -22,32 +22,31 @@ background  BSc Mathematics (Honours) @ Asutosh
 research    Computer Networks
 thesis      Load Balancing in Data Center
             Networks
-location    Chennai, India
+location    Kolkata, India
 
 🟥 🟧 🟨 🟩 🟦 🟪
 
 <b>hemadri@github:~$ cat about.txt</b>
 
-I completed my MSc in Computer Science at Chennai Mathematical Institute in July 2026,
-after a BSc in Mathematics (Honours) at Asutosh College, University of Calcutta. I study
-datacenter load balancing and approximate congestion signals.
+I completed an M.Sc. in Computer Science at Chennai Mathematical Institute in 2026,
+following a B.Sc. in Mathematics (Honours) from Asutosh College, University of Calcutta.
 
-For my thesis, I implemented CONGA in ns-3 and compared it with ECMP, then explored
-Power of Two Choices in its path selection. That variant did not improve on CONGA. I am
-now evaluating smoothed RTT as an alternative congestion signal for flowlet routing; the
-implementation is working, but performance evaluation remains preliminary.
+My current interests are in computer networks, particularly datacenter networking,
+congestion-aware routing, load balancing, and programmable networks. I have used network
+simulation and experimental analysis to investigate routing approaches and their
+performance under different traffic conditions.
 
-Outside research, I build embedded projects and run a home lab with self-hosting,
-Docker, Proxmox, and NAS. My ESP32 Morse transmitter was built to support maritime
-signal training.
+Beyond networking, I&#x27;m interested in concurrent and systems programming, embedded
+systems, Linux, and self-hosted services. I enjoy understanding how software interacts
+with operating systems and hardware, and learning by building practical projects.
 
 <b>hemadri@github:~$ cat skills.conf</b>
 
-languages    C++ · C · Python · Bash
-networking   ns-3.48 · IPv4/TCP · flowlet routing · CONGA · ECMP
+languages    C++ · C · Python · Java · Javascript · Bash
+networking   ns-3 · Mininet
 analysis     NumPy · pandas · Matplotlib · Jupyter
 experiments  shared traces · recorded seeds · payload accounting · mean and p99 FCT
-embedded     ESP32-C3 · FreeRTOS · Arduino · AsyncWebServer
+embedded     ESP32 · Arduino
 crypto       OpenSSL · libsodium · key derivation · HMAC
 tooling      Linux · Git · CMake
 familiarity  Java · JavaScript · HTML · CSS · LaTeX
@@ -59,18 +58,19 @@ Networking · Algorithms · Concurrent programming · Cryptography · Machine le
 
 <b>hemadri@github:~$ cat research/interests.txt</b>
 
-  - Datacenter load balancing and routing under asymmetric link capacities
-  - Approximate congestion signals and network telemetry
-  - Transport-independent path measurement for RoCEv2
-  - Reproducible simulation and flow completion time analysis
+  - Datacenter and hyperscale networking
+  - Programmable networking
+  - Network security and traffic analysis
+  - Randomized algorithms and probabilistic analysis
 
 <b>hemadri@github:~$ cat pinned/projects.txt</b>
 
 [01] <a href="https://github.com/Hemadri01/rtt-aware-routing">rtt-aware-routing</a>
      type   Research / MSc thesis extension
-     stack  C++ · ns-3.48 · Python · Bash
-     about  An ns-3 flowlet-routing module using smoothed RTT as a congestion signal.
-            Evaluation against CONGA and ECMP is ongoing.
+     stack  C++ · ns-3 · Python · Bash
+     about  An ns-3 implementation exploring RTT-aware flowlet routing as an alternative
+            approach to datacenter load balancing. Evaluation against CONGA and ECMP is
+            ongoing.
      work   - Implements several RTT-based path-selection policies using per-uplink EWMA
               estimates and TCP ACK feedback.
             - Compares algorithms on symmetric and asymmetric leaf-spine fabrics using
@@ -83,7 +83,7 @@ Networking · Algorithms · Concurrent programming · Cryptography · Machine le
      type   Cryptography coursework
      stack  C · OpenSSL · libsodium
      about  An implementation of the RCR 32/64 stream cipher within a password-manager
-            coursework project.
+            coursework project. It was modelled after Bitwarden.
      work   - Implements cipher state, key/IV setup, and 32-bit and 64-bit keystream
               generation.
             - Supports PBKDF2-HMAC-SHA256 and Argon2id for password-based key
@@ -94,8 +94,8 @@ Networking · Algorithms · Concurrent programming · Cryptography · Machine le
 [03] <a href="https://github.com/Hemadri01/Morse_Web_Controller_ESP32">Morse_Web_Controller_ESP32</a>
      type   Hobby project
      stack  ESP32-C3 · FreeRTOS · Arduino · AsyncWebServer
-     about  A browser-controlled ESP32-C3 Morse transmitter, built as a hobby project to
-            help my father teach maritime signaling.
+     about  A browser-controlled ESP32-C3 Morse transmitter, built to support
+            maritime-signaling instruction for a Second Mate Officer course.
      work   - FreeRTOS tasks handle Morse generation, relay control, and Wi-Fi
               access-point connectivity.
             - Browser controls provide adjustable timing, start/stop/pause/resume, and
@@ -111,8 +111,8 @@ Networking · Algorithms · Concurrent programming · Cryptography · Machine le
 [05] <a href="https://github.com/Hemadri01/trafpy">trafpy</a>
      type   Research tooling / fork of cwfparsonson/trafpy
      stack  Python · NumPy · pandas · Matplotlib · Jupyter
-     about  Adapted TrafPy for early routing experiments: workload generation, ns-3
-            trace exports, and flow completion time analysis.
+     about  Adapted TrafPy to generate traffic workloads and support trace-based
+            evaluation of datacenter load-balancing algorithms in ns-3.
      work   - Generated rack-aware and cross-rack workloads for early 100 Mb/s
               experiments, with CSV exports for ns-3.
             - Analysis notebooks match input and output flows and compare CONGA, ECMP,
